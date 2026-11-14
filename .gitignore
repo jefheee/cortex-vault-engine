@@ -1,0 +1,29 @@
+# Dependencias e Builds
+node_modules/
+dist/
+dist-test/
+*.tsbuildinfo
+
+# Segredos e Configuracao Local (NUNCA subir para Git)
+.env
+.env.*
+!.env.example
+
+# Estado, Logs, Locks, Checkpoints e Ledger Transacional
+*.log
+*.lock
+state*.json
+hashes*.json
+sticky-imported.json
+vault-index.json
+ledger*.jsonl
+checkpoints/
+.tmp/
+
+# Dados Pessoais / Filas de Entrada / Arquivos Temporarios do Cofre
+processed_archive/
+trash/
+inbox_chats/
+*.bak
+.DS_Store
+Thumbs.db
